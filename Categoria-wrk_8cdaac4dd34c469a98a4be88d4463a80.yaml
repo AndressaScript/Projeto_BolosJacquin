@@ -1,0 +1,139 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Categoria
+meta:
+  id: wrk_8cdaac4dd34c469a98a4be88d4463a80
+  created: 1789147775143
+  modified: 1789147775143
+  description: ""
+collection:
+  - url: https://localhost:7118/api/Categoria
+    name: Listar Categoria
+    meta:
+      id: req_a81290fabeff4232bab1dba628cc6ca3
+      created: 1789147780779
+      modified: 1789389005635
+      isPrivate: false
+      description: ""
+      sortKey: -1789147780779
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Categoria
+    name: Cadastrar Categoria
+    meta:
+      id: req_cbd2e53ce8664c47afdcb3079c934343
+      created: 1789147811628
+      modified: 1789412335090
+      isPrivate: false
+      description: ""
+      sortKey: -1789147811628
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"Nome": "Bolos Salgados"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Categoria/37c31c67-d654-4ee3-bf66-9698fbc03b56
+    name: Deletar categoria
+    meta:
+      id: req_8197466890be4c99ad8ac3dbc26d14f1
+      created: 1789384684846
+      modified: 1789412360605
+      isPrivate: false
+      description: ""
+      sortKey: -1789384684846
+    method: DELETE
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Categoria/fe31e91b-2ffa-4c61-9984-a0661c80edb8
+    name: Atualizar Categoria
+    meta:
+      id: req_e05d97be1cf3442daef2c953e4bf713c
+      created: 1789385699719
+      modified: 1789412356525
+      isPrivate: false
+      description: ""
+      sortKey: -1789385699719
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"Nome": "Bolos Sem Açucar"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Categoria/fe31e91b-2ffa-4c61-9984-a0661c80edb8/possui-produtos
+    name: Listagem de produtos associados a categoria
+    meta:
+      id: req_a216debdfa7f4ad0a43faf86fdf40936
+      created: 1789386962524
+      modified: 1789387119409
+      isPrivate: false
+      description: ""
+      sortKey: -1789386962524
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9e56846ceb444882685bea27e01c536803af5efe
+    created: 1789147775161
+    modified: 1789147775161
+environments:
+  name: Base Environment
+  meta:
+    id: env_9e56846ceb444882685bea27e01c536803af5efe
+    created: 1789147775153
+    modified: 1789147775153
+    isPrivate: false

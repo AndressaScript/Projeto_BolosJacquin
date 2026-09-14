@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Produtos
+meta:
+  id: wrk_6a638f60e07f43d7a6e8564967f1e029
+  created: 1789134772061
+  modified: 1789134772061
+  description: ""
+collection:
+  - url: https://localhost:7118/api/Produtos
+    name: Listar Produtos
+    meta:
+      id: req_e03898b1b19945448cbdad40901bf9f8
+      created: 1789135348345
+      modified: 1789150300945
+      isPrivate: false
+      description: ""
+      sortKey: -1789135348345
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Produtos
+    name: Cadastrar Produtos
+    meta:
+      id: req_0107be684b38462fa8c509d6758f6b01
+      created: 1789139918516
+      modified: 1789412581210
+      isPrivate: false
+      description: ""
+      sortKey: -1789139918516
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"categoriaID": "fe31e91b-2ffa-4c61-9984-a0661c80edb8",
+          "nome": "Bolo de Chocolate Belga com Frutas Vermelhas",
+          "preco": 85.50,
+          "enderecoImagem": "https://www.oetker.com.br/assets/recipes/assets/ccca4c720f4c4c1b99973ec9871e1b1b/750x910/bolo-de-chocolate-com-frutas-vermelhas.jpg",
+          "descricaoCurta": "Bolo artesanal Red Velvet recheado com chocolate belga e morangos.",
+          "descricaoLonga": "Massa de cacau 70% úmida e fofinha, recheada com ganache de chocolate belga e compota artesanal de frutas vermelhas. Finalizado com raspas de chocolate e morangos frescos.",
+          "disponibilidade": true,
+          "situacao": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Produtos/d41ba40e-b075-4c02-99bb-c5363c10a8dd
+    name: Deletar Produtos
+    meta:
+      id: req_426a68c20360498083da582278a0aba0
+      created: 1789144933753
+      modified: 1789412636398
+      isPrivate: false
+      description: ""
+      sortKey: -1789144933753
+    method: DELETE
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Produtos/61142046-f57b-42ef-aac3-c14ad95abc7f
+    name: Buscar por Id
+    meta:
+      id: req_3070f414529841b19501e9dcf8df9f0c
+      created: 1789150275840
+      modified: 1789153315978
+      isPrivate: false
+      description: ""
+      sortKey: -1789150275840
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Produtos/61142046-f57b-42ef-aac3-c14ad95abc7f
+    name: Atualizar Produto
+    meta:
+      id: req_e7e104094ef94905afea4b817cbe8148
+      created: 1789153303553
+      modified: 1789412489228
+      isPrivate: false
+      description: ""
+      sortKey: -1789153303553
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+          "categoriaID": "fe31e91b-2ffa-4c61-9984-a0661c80edb8",
+          "nome": "Bolo Red Velvet Trufado com Frutas Vermelhas",
+          "preco": 95.00,
+          "enderecoImagem": "https://meusite.com/imagens/red-velvet-especial.jpg",
+          "descricaoCurta": "Massa aveludada com recheio cremoso de cream cheese e frutas frescas.",
+          "descricaoLonga": "Receita artesanal com massa vermelha aveludada, camadas generosas de frosting tradicional de cream cheese e geleia caseira de morango com framboesa. Decorado com frutas vermelhas selecionadas.",
+          "disponibilidade": true,
+          "situacao": true
+        } 
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c3ed6c4916476423ebd3b0484196cfacce95cb7f
+    created: 1789134772071
+    modified: 1789134772071
+environments:
+  name: Base Environment
+  meta:
+    id: env_c3ed6c4916476423ebd3b0484196cfacce95cb7f
+    created: 1789134772066
+    modified: 1789134772066
+    isPrivate: false

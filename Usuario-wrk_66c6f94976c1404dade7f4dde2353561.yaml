@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Usuario
+meta:
+  id: wrk_66c6f94976c1404dade7f4dde2353561
+  created: 1789391662764
+  modified: 1789391662764
+  description: ""
+collection:
+  - url: https://localhost:7118/api/Usuario
+    name: Cadastrar Usuario
+    meta:
+      id: req_ca506715ac734f2bb9454ad6966535b4
+      created: 1789391668730
+      modified: 1789409804209
+      isPrivate: false
+      description: ""
+      sortKey: -1789391668730
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Paula",
+          "sobrenome": "Xavier",
+          "email": "paulaxavier@gmail.com",
+          "senha": "paulax123",
+          "perfil": "Cliente",
+          "situacao": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: none
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Usuario
+    name: Listar Usuarios
+    meta:
+      id: req_0654057beae94e9aabace65cf6ffec92
+      created: 1789391683465
+      modified: 1789409921528
+      isPrivate: false
+      description: ""
+      sortKey: -1789391683465
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiNTk2ZWJlMmMtMTdlMS00ODg0LTk5NzUtOGRiYjVlZjc0M2M2IiwiZXhwIjoxNzg5NDM4NzA3LCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.wqL23vRcgg4gmi9b4Qm8jjEDhsqBFD9vBvHsp_3gE_M
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Usuario/9f72acf9-80c9-411e-a1e4-fce76cc0e494
+    name: Deletar Usuario
+    meta:
+      id: req_1cf45d1c0cbb46a3a4d6ae2ecd509be6
+      created: 1789392860574
+      modified: 1789411742280
+      isPrivate: false
+      description: ""
+      sortKey: -1789392860574
+    method: DELETE
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiNTk2ZWJlMmMtMTdlMS00ODg0LTk5NzUtOGRiYjVlZjc0M2M2IiwiZXhwIjoxNzg5NDM4NzA3LCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.wqL23vRcgg4gmi9b4Qm8jjEDhsqBFD9vBvHsp_3gE_M
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Usuario/0625b5c8-ec2d-4fee-9dff-48c4acd601f9
+    name: Atualizar Usuario
+    meta:
+      id: req_040e72d60cd54b49920e194ebcbc2fa5
+      created: 1789392906732
+      modified: 1789412026187
+      isPrivate: false
+      description: ""
+      sortKey: -1789392906732
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Erika",
+          "sobrenome": "Hiltonn",
+          "email": "HiltonErika@gmail.com",
+          "senha": "erikakaka123",
+          "perfil": "Admin",
+          "situacao": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNWVkMGQ3Zi03NDY1LTRkYjgtYmU3ZS1mZmVmMjhiYTgxMzYiLCJlbWFpbCI6InBhdWxheGF2aWVyQGdtYWlsLmNvbSIsIm5vbWUiOiJQYXVsYSBYYXZpZXIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDbGllbnRlIiwianRpIjoiOWFjZTRlZDAtNzBkMi00MjlhLThmYTYtMDk2ZDU1NjRhYTEyIiwiZXhwIjoxNzg5NDQwNjU2LCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.1L2I8PDpz2wZc28ixvY805FvaWvtduLja5SQAdtdMXs
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Usuario/0625b5c8-ec2d-4fee-9dff-48c4acd601f9
+    name: Buscar por Id
+    meta:
+      id: req_59aded3fc04f48709fedcc25eaf128ec
+      created: 1789393320568
+      modified: 1789412089634
+      isPrivate: false
+      description: ""
+      sortKey: -1789393320568
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMDc5MTBjNjYtM2I2Yi00M2VhLWEyZjItNjY5MmU2NTU0NjNmIiwiZXhwIjoxNzg5NDQwODUzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.t0Sn3EiNyA1AVSPSrr-90pcTN2qPrf_TsVCGW13gsBw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d6c0a3a45b341a12e189d312e77f69d31e1f51ac
+    created: 1789391662772
+    modified: 1789391662772
+environments:
+  name: Base Environment
+  meta:
+    id: env_d6c0a3a45b341a12e189d312e77f69d31e1f51ac
+    created: 1789391662769
+    modified: 1789391662769
+    isPrivate: false

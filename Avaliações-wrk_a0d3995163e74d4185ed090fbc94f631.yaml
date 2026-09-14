@@ -1,0 +1,168 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Avaliações
+meta:
+  id: wrk_a0d3995163e74d4185ed090fbc94f631
+  created: 1789393375845
+  modified: 1789393375845
+  description: ""
+collection:
+  - url: https://localhost:7118/api/Avaliacao
+    name: Listar Avaliacoes
+    meta:
+      id: req_3dfb76d230e14c0dac73a4a77a3535ad
+      created: 1789398075194
+      modified: 1789409028101
+      isPrivate: false
+      description: ""
+      sortKey: -1789398075194
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNDlmOTliNS1kNjFiLTQxN2EtODAyMS0yODg0NjE2ODIwNWUiLCJlbWFpbCI6ImVyaWNrQGJvbG9zamFjcXVpbi5jb20iLCJub21lIjoiRXJpY2sgSmFjcXVpbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwianRpIjoiMzYwNjRmNzctYWYwNi00OWE3LTgwMWUtMTc2ZWZlM2ZmY2IwIiwiZXhwIjoxNzg5NDM1NzkzLCJpc3MiOiJCb2xvc0phY3F1aW4uV2ViQVBJIiwiYXVkIjoiQm9sb3NKYWNxdWluLldlYkFQSSJ9.o9sQI3M_8bs-h2UDnxLQ98PRkKPrgtb4Cs1Y8_-UW-o
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Avaliacao
+    name: Cadastrar Avalicoes
+    meta:
+      id: req_2b86f1553c98469e995928e5494d42ae
+      created: 1789398146352
+      modified: 1789409361330
+      isPrivate: false
+      description: ""
+      sortKey: -1789398146352
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "usuarioId": "b3bc3329-07f9-4ed2-8f58-7b5a22f1b81f",
+          "produtoId": "61142046-f57b-42ef-aac3-c14ad95abc7f",
+          "nota": 5,
+          "comentario": "Muito bom!!"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiM2JjMzMyOS0wN2Y5LTRlZDItOGY1OC03YjVhMjJmMWI4MWYiLCJlbWFpbCI6InBhb2xhT2xpQGdtYWlsLmNvbSIsIm5vbWUiOiJQYW9sYSBPbGl2ZWlyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkNsaWVudGUiLCJqdGkiOiI4YzYxZTZlOS1iYjk1LTQyMjktOGRkYS0zM2Q0NTA5NWRjNWEiLCJleHAiOjE3ODk0MzcxMDUsImlzcyI6IkJvbG9zSmFjcXVpbi5XZWJBUEkiLCJhdWQiOiJCb2xvc0phY3F1aW4uV2ViQVBJIn0.BXeggRwmtqUmyDeZCKrgYWTQFuaHq9i59euBZhg4_Ms
+      prefix: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Avaliacao/130c41f0-e5b6-49db-ad25-b1510bf5a267
+    name: Editar Avaliação
+    meta:
+      id: req_4cedcd05d90649c890b4caff5efe7836
+      created: 1789403350991
+      modified: 1789409142268
+      isPrivate: false
+      description: ""
+      sortKey: -1789403350991
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "usuarioId": "0625b5c8-ec2d-4fee-9dff-48c4acd601f9",
+          "produtoId": "61142046-f57b-42ef-aac3-c14ad95abc7f",
+          "nota": 4,
+          "comentario": "Merda, Lixo"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiM2JjMzMyOS0wN2Y5LTRlZDItOGY1OC03YjVhMjJmMWI4MWYiLCJlbWFpbCI6InBhb2xhT2xpQGdtYWlsLmNvbSIsIm5vbWUiOiJQYW9sYSBPbGl2ZWlyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkNsaWVudGUiLCJqdGkiOiI4YzYxZTZlOS1iYjk1LTQyMjktOGRkYS0zM2Q0NTA5NWRjNWEiLCJleHAiOjE3ODk0MzcxMDUsImlzcyI6IkJvbG9zSmFjcXVpbi5XZWJBUEkiLCJhdWQiOiJCb2xvc0phY3F1aW4uV2ViQVBJIn0.BXeggRwmtqUmyDeZCKrgYWTQFuaHq9i59euBZhg4_Ms
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Avaliacao/130c41f0-e5b6-49db-ad25-b1510bf5a267
+    name: Deletar Avalições
+    meta:
+      id: req_bd8ac80e6d924fbfa46be2cfe8cfb672
+      created: 1789403794607
+      modified: 1789409148364
+      isPrivate: false
+      description: ""
+      sortKey: -1789403794607
+    method: DELETE
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiM2JjMzMyOS0wN2Y5LTRlZDItOGY1OC03YjVhMjJmMWI4MWYiLCJlbWFpbCI6InBhb2xhT2xpQGdtYWlsLmNvbSIsIm5vbWUiOiJQYW9sYSBPbGl2ZWlyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkNsaWVudGUiLCJqdGkiOiI4YzYxZTZlOS1iYjk1LTQyMjktOGRkYS0zM2Q0NTA5NWRjNWEiLCJleHAiOjE3ODk0MzcxMDUsImlzcyI6IkJvbG9zSmFjcXVpbi5XZWJBUEkiLCJhdWQiOiJCb2xvc0phY3F1aW4uV2ViQVBJIn0.BXeggRwmtqUmyDeZCKrgYWTQFuaHq9i59euBZhg4_Ms
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Avaliacao/7cb6bcad-5ddf-4783-a708-ee4fcfc73f98
+    name: Buscar Avaliação por Id
+    meta:
+      id: req_ad58eb65dda24d79930c558152aeef8e
+      created: 1789404248122
+      modified: 1789404536502
+      isPrivate: false
+      description: ""
+      sortKey: -1789404248122
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:7118/api/Avaliacao/produto/61142046-f57b-42ef-aac3-c14ad95abc7f
+    name: Buscar Avalição por Produto
+    meta:
+      id: req_05a46a73c97c462dbcc0742f486a0534
+      created: 1789408928260
+      modified: 1789409237458
+      isPrivate: false
+      description: ""
+      sortKey: -1789408928260
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4561623d124aab672655b1a4e6e50ef2ab1f7c06
+    created: 1789393375857
+    modified: 1789393375857
+environments:
+  name: Base Environment
+  meta:
+    id: env_4561623d124aab672655b1a4e6e50ef2ab1f7c06
+    created: 1789393375850
+    modified: 1789393375850
+    isPrivate: false
